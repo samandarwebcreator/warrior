@@ -181,10 +181,53 @@ body::-webkit-scrollbar-thumb {
   margin-left: 3px;
   transition: 0s;
 }
+.partfolio__bg .partfolio__description {
+  background-image: url("../../assets/images/partfolioImg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0;
+  height: 400px;
+  margin-bottom: 40px;
+}
+.partfolio__bg .partfolio__description-wrapper {
+  max-width: 1129px;
+  padding-bottom: 80px;
+}
+.partfolio__bg .partfolio__description-wrapper p {
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+.partfolio__bg .partfolio__description-wrapper button {
+  border-radius: 20px;
+  background-color: #0040DD;
+  color: white;
+  padding: 5px 10px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  font-weight: 600;
+}
+.partfolio__bg .partfolio__description-wrapper button:hover {
+  background-color: transparent;
+  border-color: white;
+}
+.partfolio__bg .partfolio__description-wrapper button i {
+  border-radius: 50%;
+  border: 1px solid white;
+  padding: 5px;
+}
 @media screen and (max-width: 768px) {
   .partfolio__bg .partfolio__innerside {
     flex-basis: 100%;
+    margin-bottom: 15px;
     max-width: 100%;
+  }
+  .partfolio__bg .partfolio__description {
+    background-size: cover;
+    background-position: center;
   }
   .partfolio__bg .partfolio__title {
     font-size: 32px;
@@ -192,7 +235,6 @@ body::-webkit-scrollbar-thumb {
   }
   .partfolio__bg .parfolio__hover-box div {
     padding: 7px;
-    margin: 0 auto;
     margin-left: 7px;
     bottom: 7px;
   }

@@ -6,6 +6,7 @@ function get(item) {
     }
 }
 
+
 const parfolioArray = [
     {
         id: 1,
@@ -30,6 +31,14 @@ const parfolioArray = [
     {
         id: 6,
         image: "../assets/images/Component6.jpg"
+    },
+    {
+        id: 7,
+        image: "../assets/images/Component7.jpg"
+    },
+     {
+        id: 8,
+        image: "../assets/images/Component8.jpg"
     }
 ]
 

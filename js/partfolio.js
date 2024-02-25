@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
     const mainBox = get(".partfolio__wrapper");
 
     function renderPortfolioCards() {
-        const cardCount = window.innerWidth >= 768 ? 6 : 4;
+        const cardCount = window.innerWidth >= 768 ? 8 : 6;
 
         let displayCards = parfolioArray.slice(0, cardCount).map(item => {
             const { id, image } = item;

@@ -24,17 +24,29 @@
   }
 }
 
-@mixin header-links() {
-  font-weight: 700;
-  color: $header-links-color;
-  line-height: 25px;
-  font-size: 15px;
-  border-bottom: 2px solid transparent;
-  transition: all 0.6s ease-in-out;
+@mixin partolio-btn() {
+   
+    border-radius: 20px; 
+    background-color: #0040DD;
+    color: white; 
+    padding: 5px 10px; 
+    border: 2px solid transparent; 
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    font-weight: 600; 
 
-  &:hover {
-    border-bottom: 2px solid $logo-color;
-    transition: all 0.6s ease-in-out;
-    background-color: transparent;
-  }
+&:hover {
+    background-color: transparent; 
+    border-color: white; 
+
+}
+
+& i {
+    border-radius: 50%; 
+    border: 1px solid white; 
+    padding: 5px; 
+}
+
+
+ 
 }

@@ -108,10 +108,44 @@
         transition: 0s;
     }
 
+    .partfolio__description{
+        background-image: url("../../assets/images/partfolioImg.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 0;
+        height: 400px;
+        margin-bottom: 40px;
+    }
+
+    .partfolio__description-wrapper{
+        max-width: 1129px;
+        padding-bottom: 80px;
+    }
+
+    .partfolio__description-wrapper p{
+        color: #fff;
+        font-size: 18px;
+        letter-spacing: 1px;
+        line-height: 1.5; 
+        margin-bottom: 30px;
+    }
+
+    .partfolio__description-wrapper button{
+        @include partolio-btn()
+    }
+
     @media screen and (max-width: 768px) {
         .partfolio__innerside {
             flex-basis: 100%;
+            margin-bottom:15px;
             max-width: 100%;
+
+        }
+
+        .partfolio__description{
+
+            background-size: cover;
+            background-position: center;
         }
 
         .partfolio__title{
@@ -121,10 +155,8 @@
 
         .parfolio__hover-box div{
             padding: 7px;
-        margin: 0 auto;
         margin-left: 7px;
         bottom: 7px;
-
         }
 
         .parfolio__hover-box h2 {
@@ -154,7 +186,6 @@
             margin: 0 auto;
             margin-left: 7px;
             bottom: 7px;
-
         }
 
         .parfolio__hover-box h2 {
