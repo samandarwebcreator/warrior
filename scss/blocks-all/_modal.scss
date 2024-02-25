@@ -1,0 +1,42 @@
+.modal_content{
+    width: 100%;
+    padding-top: 120px;
+}
+.modal{
+    padding: 15px;
+    width: 70%;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-gap: 10px;
+}
+.modal_form{
+    display: flex;
+    gap: 20px;
+    // flex-direction: column;
+}
+label{
+    display: flex;
+    flex-direction: column;
+    P{
+        font-weight: 600;
+        font-size: 16px;
+    color: #fff;
+    }
+}
+input{
+    padding:  14px 235px 14px 25px;
+    border-radius: 30px;
+    color: #fff;
+    border: 1px solid #fff;
+    background: #1c1c1c;
+}
+select{
+    padding:  14px 235px 14px 25px;
+    border-radius: 30px;
+    border: 1px solid #fff;
+    background: #1c1c1c;
+    option{
+        color: #fff;
+    }
+}
+

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+          <nav class="navbar">
+            <div class="navbar_logo">
+              <a href="#">
+                <img src="../assets/icons/logo-removebg 1.svg" alt="logo" />
+              </a>
+            </div>
+            <div class="navbar_links">
+              <a href="./services.html">Services</a>
+              <a href="./partfolio.html">Portfolio</a>
+              <a href="./about.html">About us</a>
+              <button class="navbar_links_lng">
+                Uz Ru
+                <span>En</span>
+              </button>
+              <div class="close_menu" onclick="menuFuncCl()">
+                  <img src="../assets/icons/close_menu.svg" alt="icon">
+              </div>
+            </div>
+            <div class="navbar_menu" onclick="menuFuncOp()">
+              <img src="../assets/icons/open_menu.svg" alt="icon">
+            </div>
+          </nav>
+        </div>
+      </header>
+      <div class="modal_content">
+        <div class="container">
+            <div class="modal">
+                <form>
+                    <div class="modal_form">
+                        <label>
+                            <p>Ism Familiya</p>
+                            <input type="text" placeholder="ismingizni kiriting">
+                        </label>
+                        <label>
+                            <p>Companiyani kiriting</p>
+                            <input type="text" placeholder="companiya">
+                        </label>
+                    </div>
+                    <div class="modal_form">
+                        <label>
+                            <p>Telegram username</p>
+                            <input type="text" placeholder="Username">
+                        </label>
+                        <label>
+                           <p> Phone number</p>
+                            <input type="number" placeholder="+998 99">
+                        </label>
+                    </div>
+                    <div class="modal_form">
+                        <label>
+                           <p> Sayni turini tanlang</p>
+                           <select name="type" id="type">
+                            <option value="corpartiv sayt"></option>
+                            <option value="personal sayt"></option>
+                          </select>
+                        </label>
+                        <label>
+                            <p>Sizga bo’glanish usulini tanlang</p>
+                          <select name="connection" id="connection">
+                            <option value="Telegram"></option>
+                            <option value="SMS"></option>
+                            <option value="email"></option>
+                          </select>
+                        </label>
+                    </div>
+                    <label>
+                       <p> message</p>
+                        <textarea name="massege" id="massege"></textarea>
+                    </label>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
