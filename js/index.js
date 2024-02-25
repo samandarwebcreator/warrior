@@ -39,3 +39,7 @@ function menuFuncOp() {
 function menuFuncCl() {
   document.querySelector(".navbar_links").style.left = "101%";
 }
+let modal = document.querySelector('.modal_content')
+function displayModal(){
+  modal.style.display = 'block'
+}

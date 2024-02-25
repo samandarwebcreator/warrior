@@ -452,13 +452,18 @@ footer .footer_right ul li a {
   }
 }
 .modal_content {
+  display: none;
   width: 100%;
-  padding-top: 120px;
+  padding-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .modal {
-  padding: 15px;
-  width: 70%;
+  padding: 10px 15px;
+  width: 60%;
+  border-right: 1px solid #fff;
+  border-top: 1px solid rgb(255, 255, 255);
   display: grid;
   grid-template-rows: auto auto;
   grid-gap: 10px;
@@ -466,33 +471,67 @@ footer .footer_right ul li a {
 
 .modal_form {
   display: flex;
+  align-items: flex-start;
+  margin-top: 16px;
   gap: 20px;
 }
 
 label {
+  max-width: 360px;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  gap: 16px;
 }
 label P {
   font-weight: 600;
   font-size: 16px;
   color: #fff;
 }
-
-input {
-  padding: 14px 235px 14px 25px;
-  border-radius: 30px;
-  color: #fff;
-  border: 1px solid #fff;
-  background: #1c1c1c;
-}
-
-select {
-  padding: 14px 235px 14px 25px;
+label select {
+  width: 100%;
+  padding: 14px 25px;
   border-radius: 30px;
   border: 1px solid #fff;
-  background: #1c1c1c;
-}
-select option {
+  background: rgba(255, 255, 255, 0.1);
   color: #fff;
+}
+label select option {
+  color: #fff;
+}
+label input {
+  width: 100%;
+  padding: 14px 25px;
+  border-radius: 30px;
+  color: #fff;
+  outline: none;
+  border: 1px solid #fff;
+  background: rgba(255, 255, 255, 0.1);
+}
+label:last-child {
+  max-width: 840px;
+  width: 100%;
+}
+label:last-child textarea {
+  width: 100%;
+  height: 100px;
+  padding: 16px;
+  border-radius: 25px;
+  border: 1px solid #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  outline: none;
+  resize: none;
+}
+
+.modal_left {
+  width: 30%;
+  display: flex;
+  border-top: 1px solid rgb(255, 255, 255);
+  justify-content: center;
+  color: #fff;
+}
+
+.modal_left-body {
+  padding: 50px 30px;
 }/*# sourceMappingURL=styles.css.map */
