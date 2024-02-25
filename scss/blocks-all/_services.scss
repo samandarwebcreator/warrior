@@ -10,13 +10,13 @@
     background: #1C1C1E;
     color: #fff;
     overflow-x: auto;
-;
+    padding: 80px 0px 0px;
+    margin-bottom: 80px;
 }
 .services_navbar{
-    width: 100%;
     color: #fff;
     font-weight: 700;
-    font-size: 55px;
+    font-size: 35px;
     padding: 20px 65px;
     line-height: 75px;
     padding-bottom: 30px;
@@ -54,6 +54,31 @@
         }
     }
   }
-  
+  .scroll_line {
+    width: 70%;
+    height: 2px; /* Height of the line */
+    background: linear-gradient(to right,rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 0) 80% );
+    pointer-events: none;
+    margin: 20px auto;
+    border: 0.6px solid rgba(39, 39, 38, 0.8);
+}
+
+.services_button{
+    @include brand-button()
+}
+
+.services_main::-webkit-scrollbar {
+    width: 10px;
+  height: 1px;
+  }
+@media (max-width: 650px) {
+    .services_navbar{
+        font-size: 25px;
+        padding: 15px;
+    }
+.services_item{
+    width: 100%;
+}
+} 
   
   

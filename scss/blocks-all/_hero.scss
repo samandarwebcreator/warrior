@@ -38,6 +38,27 @@
 }
 
 
+.partfolio__description-wrapper{
+
+    max-width: 1129px;
+    padding: 80px 0px;
+    
+}
+
+.partfolio__description-wrapper p{
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 1.5; 
+    margin-bottom: 30px;
+}
+
+.partfolio__description-wrapper button{
+    @include partolio-btn()
+}
+
+
+
 @media (max-width: 576px){
     
 }
