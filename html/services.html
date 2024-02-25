@@ -11,40 +11,135 @@
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <section class="services">
-        <div class="services_navbar">
-            <h1>Services</h1>
+
+    <header id="header">
+        <div class="container">
+          <nav class="navbar">
+            <div class="navbar_logo">
+              <a href="#">
+                <img src="../assets/icons/logo-removebg 1.svg" alt="logo" />
+              </a>
+            </div>
+            <div class="navbar_links">
+              <a href="./services.html">Services</a>
+              <a href="./partfolio.html">Portfolio</a>
+              <a href="./about.html">About us</a>
+              <button class="navbar_links_lng">
+                Uz Ru
+                <span>En</span>
+              </button>
+              <div class="close_menu" onclick="menuFuncCl()">
+                  <img src="../assets/icons/close_menu.svg" alt="icon">
+              </div>
+            </div>
+            <div class="navbar_menu" onclick="menuFuncOp()">
+              <img src="../assets/icons/open_menu.svg" alt="icon">
+            </div>
+          </nav>
         </div>
-        <div class="services_main">
-            <div class="services_item">
-                <div class="services_item_bg">
-                    <h2>App design</h2>
-                <p>An effective process, method, and offers to cover your daily basis needs with the app</p>
-                <button class="services_button">Read more <div class="services_right_button"><i class="fa-regular fa-right"></i></div></button>
+      </header>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">
+          <img src="../assets/icons/back-top.svg" alt="icon">
+      </button>
+  
+      <main>
+        <section class="hero_bg_img">
+            <div class="container">
+                <div class="boglanish">
+                    <div class="boglanish_btn">
+                        <button class="boglanish_btn_blue">Bog’lanish <img src="../assets/icons/hero_btn_icon.svg" alt="icon"></button>
+                        <button class="boglanish_btn_white">Breif to’ldirish <img src="../assets/icons/hero_icon_btn.svg" alt="icon"></button>
+                    </div>
                 </div>
             </div>
-            <div class="services_item">
-                <div class="services_item_bg">
-                    <h2>App design</h2>
-                <p>An effective process, method, and offers to cover your daily basis needs with the app</p>
-                <button class="services_button">Read more <div class="services_right_button"><i class="fa-regular fa-right"></i></div></button>
+        </section>
+
+
+        <section class="services">
+            <div class="services_navbar">
+                <h1>Services</h1>
+            </div>
+            <div class="services_main">
+                <div class="services_item">
+                    <div class="services_item_bg">
+                        <h2>App design</h2>
+                    <p>An effective process, method, and offers to cover your daily basis needs with the app</p>
+                    <button class="services_button">Read more <div class="services_right_button"><i class="fa-regular fa-right"></i></div></button>
+                    </div>
+                </div>
+                <div class="services_item">
+                    <div class="services_item_bg">
+                        <h2>App design</h2>
+                    <p>An effective process, method, and offers to cover your daily basis needs with the app</p>
+                    <button class="services_button">Read more <div class="services_right_button"><i class="fa-regular fa-right"></i></div></button>
+                    </div>
+                </div>
+                <div class="services_item">
+                    <div class="services_item_bg">
+                        <h2>App design</h2>
+                    <p>An effective process, method, and offers to cover your daily basis needs with the app</p>
+                    <button class="services_button">Read more <div class="services_right_button"><i class="fa-regular fa-right"></i></div></button>
+                    </div>
+                </div>
+                <div class="services_item">
+                    <div class="services_item_bg">
+                        <h2>App design</h2>
+                    <p>An effective process, method, and offers to cover your daily basis needs with the app</p>
+                    <button class="services_button">Read more <div class="services_right_button"><i class="fa-regular fa-right"></i></div></button>
+                    </div>
                 </div>
             </div>
-            <div class="services_item">
-                <div class="services_item_bg">
-                    <h2>App design</h2>
-                <p>An effective process, method, and offers to cover your daily basis needs with the app</p>
-                <button class="services_button">Read more <div class="services_right_button"><i class="fa-regular fa-right"></i></div></button>
+        </section>
+      </main>
+
+
+      <footer>
+        <div class="container">
+            <div class="footer">
+                <div class="footer_left">
+                    <form>
+                        <p>Savollar bo’lsa jo’natishingiz mumkun</p>
+                        <input type="email" name="email" placeholder="Email-com" required>
+                        <input type="tel" name="phone_number" placeholder="Phone number" required>
+                        <input type="text" name="questions" placeholder="Savolingizni yozing" required>
+                        <button type="submit">Jo’natish <img src="../assets/icons/hero_btn_icon.svg" alt="icon"></button>
+                    </form>
+                    <p>2022 Naturality Digital. All rights reseved</p>
                 </div>
-            </div>
-            <div class="services_item">
-                <div class="services_item_bg">
-                    <h2>App design</h2>
-                <p>An effective process, method, and offers to cover your daily basis needs with the app</p>
-                <button class="services_button">Read more <div class="services_right_button"><i class="fa-regular fa-right"></i></div></button>
+                <div class="footer_right">
+                    <ul>
+                        <p>Services</p>
+                        <li>Web design</li>
+                        <li>App design</li>
+                        <li>Frontend</li>
+                    </ul>
+                    <ul>
+                        <p>Portfolio</p>
+                        <li>iMan invest</li>
+                        <li>Izma crm</li>
+                        <li>Airbnb</li>
+                    </ul>
+                    <ul>
+                        <p>About us</p>
+                        <li>Nimadir </li>
+                        <li>Bla bla bla</li>
+                        <li>Togga go</li>
+                    </ul>
+                    <ul>
+                        <p>Contac us</p>
+                        <li>Mirzo ulugbek nimadir nimadir rayon 7 uy</li>
+                        <li>+998 99 030 00 39</li>
+                    </ul>
+                    <ul>
+                        <p>Label</p>
+                        <li><a href="https://web.telegram.org/a/">Label</a></li>
+                        <li><a href="https://www.instagram.com/">Instagram</a></li>
+                        <li><a href="https://www.facebook.com/">Facebook</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </section>
+    </footer>
+   
 </body>
 </html>
