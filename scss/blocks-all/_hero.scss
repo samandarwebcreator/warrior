@@ -1,0 +1,43 @@
+.hero_bg_img{
+    margin-top: 160px;
+    background-image: url(../assets/images/Rectangle\ 11.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 415px;
+    width: 100%;
+    .boglanish{
+        position: relative;
+        &_btn{
+            display: flex;
+            align-items: center;
+            position: absolute;
+            top: -20px;
+            left: 0;
+            gap: 32px;
+            button{
+                display: flex;
+                cursor: pointer;
+                padding: 8px 10px;
+                align-items: center;
+                border-radius: 30px;
+                line-height: 24px;
+                font-size: 16px;
+                border: none;
+                gap: 8px;
+            }
+            &_blue{
+                    background-color: #0040DD;
+                    color: #fff;
+            }
+            &_white{
+                background-color: #fff;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 576px){
+    
+}

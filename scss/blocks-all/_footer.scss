@@ -1,0 +1,105 @@
+footer{
+    border-top: 1px solid #ffffff4d;
+    padding: 70px 0;
+    .footer{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 32px;
+        &_left{
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 52px;
+            form{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 16px;
+                p{
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #fff;
+                    opacity: 0.3;
+                }
+                input{
+                    width: 340px;
+                    border: none;
+                    color: #FFFFFF;
+                    outline: none;
+                    padding: 10px 20px;
+                    border-radius: 30px;
+                    border: 1px solid #FFFFFF;
+                    background-color: transparent;
+                }
+                button{
+                    border: none;
+                    display: flex;
+                    cursor: pointer;
+                    padding: 8px 10px;
+                    align-items: center;
+                    background-color: #0040DD;
+                    border-radius: 30px;
+                    line-height: 24px;
+                    font-size: 16px;
+                    color: #fff;
+                    gap: 8px;
+                }
+            }
+            & > p{
+                font-size: 16px;
+                line-height: 24px;
+                color: #fff;
+            }
+        }
+        &_right{
+            display: flex;
+            max-width: 800px;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 100%;
+            gap: 24px;
+            ul{
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                max-width: 170px;
+                gap: 12px;
+                p{
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #ffffff;
+                    opacity: 0.3;
+                }
+                li{
+                    list-style: none;
+                    font-size: 16px;
+                    line-height: 24px;
+                    cursor: pointer;
+                    color: #fff;
+                    a{
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 678px) {
+    footer{
+        .footer{
+            max-width: 460px;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 auto;
+            &_left{
+                order: 2;
+            }
+        }
+    }
+}

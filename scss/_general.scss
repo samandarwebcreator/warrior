@@ -1,14 +1,15 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
   text-decoration: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: "Inter", sans-serif;
   overflow-x: hidden;
-
+  background-color: #1c1c1c;
   &::-webkit-scrollbar {
     border: 50%;
     width: 5px;
