@@ -1,0 +1,40 @@
+/* Container for the image carousel */
+.image-container {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Each individual image in the carousel */
+.image-container img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+/* Buttons for navigation */
+#prev-btn,
+#next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#prev-btn {
+    left: 10px;
+}
+
+#next-btn {
+    right: 10px;
+}
+
+#prev-btn:hover,
+#next-btn:hover {
+    background-color: #0056b3;
+}
