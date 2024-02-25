@@ -1,3 +1,4 @@
+@import "../mixins.scss";
 %display{
     display: flex;
     justify-content: center;
@@ -13,19 +14,23 @@
     width: 100%;
     background: #1C1C1E;
     color: #fff;
-    overflow-x: auto;
-;
+    padding: 20px 0px;
 }
 .services_navbar{
     width: 100%;
     color: #fff;
+    background: #1C1C1E;
     font-weight: 700;
-    font-size: 55px;
+    font-size: 40px;
     padding: 20px 65px;
     line-height: 75px;
     padding-bottom: 30px;
 }
 .services_main{
+    width: 100%;
+    overflow-x: auto;
+}
+.services_main-body{
     display: inline-flex;
     overflow: scroll;
     white-space: nowrap;
@@ -38,7 +43,8 @@
     background-image: url(../../assets/images/backgroundservice.png);
       background-position: center;
       background-size: cover;
-      background-repeat: no-repeat; // Add relative positioning
+      background-repeat: no-repeat; 
+      opacity: 0.7;
     &_bg{
         width: 100%;
         height: 100%;
@@ -48,16 +54,45 @@
         align-items: start;
         flex-direction: column;
         justify-content: space-between;
-        background-color: #000;
+        background-color: #1C1C1E;
         transition: all 0.6s ease-in-out;
+        opacity: 1;
+        h2{
+            font-size: 32px;
+        }
         p{
             width: 300px;
+            font-size: 16px;
+        }
+        button{
+            @include brand-button()
         }
         &:hover{
             background-color: transparent;
         }
     }
   }
-  
+  .scroll_line {
+    width: 70%;
+    height: 2px; /* Height of the line */
+    background: linear-gradient(to right,rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 0) 80% );
+    pointer-events: none;
+    margin: 20px auto;
+    border: 0.6px solid rgba(39, 39, 38, 0.8);
+}
+/* For WebKit browsers */
+.services_main::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+  height: 1px;
+  }
+@media (max-width: 650px) {
+    .services_navbar{
+        font-size: 25px;
+        padding: 15px;
+    }
+.services_item{
+    width: 100%;
+}
+}
   
   
