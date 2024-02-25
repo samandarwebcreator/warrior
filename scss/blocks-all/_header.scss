@@ -1,0 +1,138 @@
+.navbar-shrink{
+    padding: 16px 0;
+    box-shadow: 0 0 15px 5px #000000cc;
+    background-color: #1c1c1c;
+}
+header{
+    position: fixed;
+    width: 100%;
+    right: 0;
+    left: 0;
+    top: 0;
+    padding: 32px 0;
+    transition: 0.3s;
+    background-color: transparent;
+    z-index: 99;    
+    .navbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &_logo{
+            img{
+                max-width: 106px;
+            }
+        }
+        &_links{
+            display: flex;
+            align-items: center;
+            gap: 36px;
+            a{
+                font-size: 16px;
+                line-height: 24px;
+                opacity: 0.3;
+                color: #fff;
+                &:hover{
+                    opacity: 0.8;
+                }
+            }
+            &_lng{
+                padding: 8px;
+                font-size: 16px;
+                color: #ffffff4d;
+                line-height: 20px;
+                border-radius: 50px;
+                background-color: transparent;
+                border: 1px solid #ffffff99;
+                span{
+                    color: #fff;
+                }
+            }
+            .close_menu{
+                display: none;
+            }
+        }
+        &_menu{
+            display: none;
+        }
+    }
+}
+
+#myBtn{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    padding: 12px 4px;
+    border-radius: 28px;
+    border: 1px solid #fff;
+    background-color: #FFFFFF33;
+}
+
+@media screen and (max-width: 768px) {
+    header{
+        .navbar{
+            &_links{
+                gap: 24px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    header{
+        .navbar{
+            &_links{
+                position: absolute;
+                left: 101%;
+                top: 0;
+                width: 100vw;
+                height: 100vh;
+                background-image: url(../assets/images/menu_img.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+                align-items: flex-start;
+                background-size: cover;
+                flex-direction: column;
+                transition: all 0.4s ease-in-out;
+                padding: 20px;
+                a{
+                    color: #000;
+                    opacity: 1;
+                    font-weight: 600;
+                    padding: 6px 16px;
+                    border-radius: 32px;
+                    background-color: #FFFFFF80;
+                    &:hover{
+                        opacity: 0.8;
+                    }
+                }
+                &_lng{
+                    display: none;
+                }
+                .close_menu{
+                    display: flex;
+                    position: absolute;
+                    right: 15px;
+                    top: 28px;
+                    img{
+                        width: 32px;
+                        height: 32px;
+                    }
+                }
+            }
+            &_menu{
+                display: flex;
+            }
+        }
+    }
+    #myBtn{
+        bottom: 15px;
+        right: 15px;
+        padding: 8px 4px;
+        img{
+            width: 32px;
+            height: 32px;
+        }
+    }
+}
